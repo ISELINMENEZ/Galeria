@@ -1,0 +1,65 @@
+/* Estilos gerais da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #B8D8EB;
+    font-family: Arial, sans-serif;
+}
+
+/* Contêiner principal do formulário */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Título do formulário */
+.login-container h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333333;
+}
+
+/* Campos de entrada */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Botão de login */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Link de recuperação de senha */
+.login-container a {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

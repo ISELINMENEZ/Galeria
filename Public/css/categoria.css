@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo da Navbar (Cabeçalho) */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    width: auto;
+    margin-bottom: 20px;
+    width: 140vh;
+}
+
+.nav-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.search-container {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+.search-container input {
+    width: 90%;
+    padding: 8px 35px 8px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4vh;
+    background-color: #f0f8ff;
+}
+
+.icon-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Estilo das Preferências */
+.preferences {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-left: 5vh;
+
+}
+.preferences span {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display:inline-block;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.close-btn {
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilo da Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.gallery-item {
+    background-color: #87b9dc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.rectangle {
+    height: 70px;
+    border-radius: 8px;
+}
+
+.rectangle.wide {
+    width: 300px;
+}
+
+.rectangle.tall {
+    width: 150px;
+    height: 200px;
+}
+
+/* Estilo do Rodapé */
+.footer {
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    margin-top: auto; /* Empurra o rodapé para o final da página */
+}
+
+.footer p {
+    color: #666;
+    font-size: 14px;
+    width: 250vh;
+    height: 40px;
+   
+}
