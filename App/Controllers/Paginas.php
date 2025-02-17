@@ -18,6 +18,14 @@ class Paginas extends Controller{
                  orientado a objetos com MVC'];
      $this->view('pagina/categoria', $dados);
     }
+    public function menu() {
+        session_start();
+        if (!isset($_SESSION['usuario_id'])) {
+            header("Location: " . URL . "/usuarios/login");
+            exit();
+        }
+        $this->view('pagina/menu');
+    }
     
 }//fim da classe Paginas
 

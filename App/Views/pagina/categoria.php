@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Obras</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?= URL ?>/public/css/categoria.css">
 </head>
 <body>
 
 <!-- Cabeçalho -->
 <header class="navbar">
     <div class="nav-links">
-        <a href="#">Obras</a>
+        <a href="<?= URL ?>/pagina/menu">Menu</a>
         <a href="#">Artistas</a>
     </div>
     
@@ -30,7 +30,7 @@
 <!-- Conteúdo Principal -->
 <main>
     <div class="preferences">
-       Preferências:
+        <h3>Preferências:</h3>
         <div class="tag">Publicidade <span class="close-btn" onclick="removeTag(this)">✖</span></div>
         <div class="tag">Ilustrações <span class="close-btn" onclick="removeTag(this)">✖</span></div>
         <div class="tag">Logotipos <span class="close-btn" onclick="removeTag(this)">✖</span></div>

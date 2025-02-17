@@ -65,16 +65,17 @@ echo '<hr>Último ID: '.$db->ultimoIdInserido();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=APP_NOME?></title>
-    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/home.css"/>
-    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/login2.css"/>
-    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/categoria.css"/>
-    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/bootstrap/css/bootstrap.css"/>
+
+
 </head>
 <body>
     <?php
-    include "../App/Views/header.php";
-    $rotas = new Rota();
-   // $rotas->url();
+require_once '../app/libraries/Rota.php';
+require_once '../app/libraries/Database.php';
+require_once '../app/libraries/Controller.php';
+
+$rota = new Rota();
+
     ?>
     <script src="<?=URL?>/public/bootstrap/js/bootstrap.js"></script>
     <script src="<?=URL?>/public/js/query.js"></script>
